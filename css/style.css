@@ -1,3 +1,4 @@
+
 .gridwrapper {
     display: grid;
     width: 100vw ;
@@ -26,7 +27,6 @@
 }
 .logo{
     grid-area: h1;
-    background-color:tomato;
     position: fixed;
     top: 3;
     left: 3;
@@ -41,19 +41,45 @@
 
 .jope{
     grid-area: hd;
-    background-color: seagreen;
+    font-family: chronicle;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: 220px;
 }
-.innergridwrapper{
+.innergridwrapper {
     grid-area: sc;
-    background-color: tan;
+    font-family: chronicle;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   
+    
+}
+.innergridwrapper div {
+    font-size: 40px;
+    border:15px solid #f7e7ce;
+    padding-top:  5px;
 }
 .matratter{
     grid-area: a1;
-    background-color: pink;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: baseline;
+}
+.matratter div{
+    width: 500px;
+    overflow: hidden;
+}
+#buffebordet{
+    width: 464px;
+    size: cover;
 }
 .namnbetydelse{
     grid-area: as;
-    background-color:blue;
+    
 }
 .textruta{
     grid-area: a2;
