@@ -22,8 +22,8 @@
     ;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(13, 100px);
-    column-gap: 3px;
-    row-gap: 3px;
+    column-gap: 8px;
+    row-gap: 8px;
 }
 .logo{
     grid-area: h1;
@@ -33,7 +33,7 @@
     width: 228px;
     height: 203px;
 }
-#loganbild{
+.loganbild{
     width: 100%;
     height: 100%;
     border-radius: 12px;
@@ -55,49 +55,157 @@
     text-align: center;
     flex-wrap: wrap;
     justify-content: space-around;
+    border: 10px inset grey;
+    background-color: #f7e7ce ;
    
-    
 }
 .innergridwrapper div {
     font-size: 40px;
     border:15px solid #f7e7ce;
     padding-top:  5px;
+    border: 10px inset grey;
 }
 .matratter{
     grid-area: a1;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: baseline;
+    overflow: hidden;
+    border: 10px inset grey;
 }
 .matratter div{
     width: 500px;
     overflow: hidden;
+    
 }
 #buffebordet{
     width: 464px;
     size: cover;
 }
 .namnbetydelse{
-    grid-area: as;
-    
+    grid-area: as; 
+    font-size: 45px;
+    padding:20px;
+    background-color: #f7e7ce;
+    border: 10px inset grey;
 }
+
 .textruta{
     grid-area: a2;
-    background-color:yellow;
+    background-color: #f7e7ce;
+    text-align: center;
+    padding: 50px;
+    font-size: 23px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 10px inset grey;
+
 }
 .oppetider{
     grid-area: a3;
-    background-color:green;
+    background-color: #f7e7ce;
+    border: 10px inset grey;
 }
 .menyord{
     grid-area: a4;
-    background-color:purple;
+    background-color: #f7e7ce;
+    border: 10px inset grey;
+    text-align: center;
+    font-size: 100px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+
 }
 .kartan{
     grid-area: a5;
-    background-color: gold;
+    background-color:  #f7e7ce;
+    border: 10px inset grey;
+    overflow: hidden;
 }
 .kontakt{
     grid-area: ft;
-    background-color:silver;
+    background-color: #f7e7ce;
+    border: 10px inset grey;
+    font-family: chronicle;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.kontakt div{
+    font-size: 20px;
+    border:15px solid #f7e7ce;
+    padding-top:  5px;
+    border: 10px inset grey;
+}
+a:hover {
+    color: white;
+    font-size:150%;
+  }
+ a:active {
+    color: blue;
+ }
+ #gridwrapper1 {
+    display: grid;
+    width: 100vw ;
+    max-width: 100%;
+    height: 100vh;
+    grid-template-areas:
+    'h1 h1 hd hd hd hd hd hd hd hd hd hd'
+    'h1 h1 hd hd hd hd hd hd hd hd hd hd'
+    'sc sc sc sc sc sc sc sc sc sc a3 a3'
+    'a1 a1 a1 a1 a1 a1 a2 a2 a2 a2 a2 a2'
+    'a1 a1 a1 a1 a1 a1 a2 a2 a2 a2 a2 a2'
+    'a1 a1 a1 a1 a1 a1 a2 a2 a2 a2 a2 a2'
+    'a1 a1 a1 a1 a1 a1 a2 a2 a2 a2 a2 a2'
+    'a1 a1 a1 a1 a1 a1 a2 a2 a2 a2 a2 a2'
+    'a1 a1 a1 a1 a1 a1 a2 a2 a2 a2 a2 a2'
+    'a1 a1 a1 a1 a1 a1 a2 a2 a2 a2 a2 a2'
+    'a1 a1 a1 a1 a1 a1 a2 a2 a2 a2 a2 a2'
+    'a1 a1 a1 a1 a1 a1 a2 a2 a2 a2 a2 a2'
+    'a1 a1 a1 a1 a1 a1 a2 a2 a2 a2 a2 a2'
+    'ft ft ft ft ft ft ft ft ft ft ft ft'
+    ;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(13, 100px);
+    column-gap: 8px;
+    row-gap: 8px;
+}
+.menytextrubrik{
+    grid-area: hd;
+    font-family: chronicle;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: 200px;
+}
+.informationen{
+    grid-area: sc;
+    background-color: #f7e7ce;
+    background-color: #f7e7ce;
+    border: 10px inset grey;
+    font-family: chronicle;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    font-size: 60px;
+}
+.tillbaka{
+    grid-area: a3;
+    background-color: #f7e7ce;
+    background-color: #f7e7ce;
+    border: 10px inset grey;
+    font-family: chronicle;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    font-size: 50px;
+}
+.ratter{
+    grid-area: a1;
+    background-color: #f7e7ce;
+}
+.priser{
+    grid-area: a2;
+    background-color: #f7e7ce;
 }
